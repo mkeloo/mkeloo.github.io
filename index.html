@@ -1,0 +1,230 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Moksh Keloo - full stack developer and AI agent engineer. Resume.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Moksh Keloo - Resume">
+<meta property="og:description" content="Full stack developer and AI agent engineer.">
+<meta property="og:type" content="profile">
+<title>Moksh Keloo Resume</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500&display=swap">
+
+<style>
+:root{
+  --paper:#ffffff; --shell:#eef0f4;
+  --ink:#151a22; --ink-2:#333c49; --muted:#5a6373;
+  --rule:#ccd3dc; --accent:#2f4a9e;
+  --serif:"Newsreader",Georgia,serif;
+  --sans:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#14171e; --shell:#0c0e13;
+    --ink:#e9ecf2; --ink-2:#b6bdca; --muted:#8b94a5;
+    --rule:#2b313c; --accent:#93aaf0;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#14171e; --shell:#0c0e13;
+  --ink:#e9ecf2; --ink-2:#b6bdca; --muted:#8b94a5;
+  --rule:#2b313c; --accent:#93aaf0;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--shell); color:var(--ink);
+  font-family:var(--sans); -webkit-font-smoothing:antialiased;
+}
+.page{
+  background:var(--paper);
+  width:8.5in; min-height:11in;
+  margin:0 auto; padding:0.38in 0.5in;
+  font-size:9.45pt; line-height:1.35;
+}
+
+.head{display:flex; align-items:flex-end; justify-content:space-between; gap:1.5rem; flex-wrap:wrap}
+h1{font-family:var(--serif); font-weight:500; font-size:25pt; line-height:1; letter-spacing:-.015em; margin:0}
+.tag{font-family:var(--mono); font-size:8.4pt; letter-spacing:.11em; text-transform:uppercase; color:var(--accent); margin:.28rem 0 0}
+.meta{text-align:right; font-size:8.7pt; color:var(--ink-2); line-height:1.55}
+.meta a{color:inherit; text-decoration:none}
+.meta a:hover{color:var(--accent)}
+
+.intro{
+  margin:.5rem 0 0; padding-top:.42rem; border-top:1.6pt solid var(--ink);
+  color:var(--ink-2); font-size:9.7pt;
+}
+
+h2{
+  font-family:var(--mono); font-weight:600; font-size:8pt;
+  letter-spacing:.16em; text-transform:uppercase; color:var(--muted);
+  margin:.5rem 0 .28rem; padding-bottom:.12rem; border-bottom:.7pt solid var(--rule);
+}
+
+.job{margin-bottom:.34rem; break-inside:avoid}
+.ctx{margin:.14rem 0 .06rem; font-size:8.9pt; color:var(--muted)}
+.auth{margin:.18rem 0 0; font-family:var(--mono); font-size:8.2pt; letter-spacing:.03em; color:var(--accent)}
+.client{margin-top:.26rem; padding-left:.85rem; break-inside:avoid}
+h4{margin:0; font-size:9.1pt; font-weight:600; font-family:var(--mono);
+   letter-spacing:.02em; color:var(--ink)}
+h4 span{font-family:var(--sans); font-weight:400; color:var(--muted); letter-spacing:0}
+.job:last-of-type{margin-bottom:0}
+.jobhead{display:flex; align-items:baseline; justify-content:space-between; gap:1rem}
+.jobhead h3{margin:0; font-size:10.4pt; font-weight:600}
+.jobhead h3 em{font-style:normal; font-weight:400; color:var(--accent)}
+.dates{font-family:var(--mono); font-size:8pt; color:var(--muted); white-space:nowrap; font-variant-numeric:tabular-nums}
+
+ul{margin:.26rem 0 0; padding:0; list-style:none; display:flex; flex-direction:column; gap:.16rem}
+li{position:relative; padding-left:.72rem; color:var(--ink-2)}
+li::before{content:""; position:absolute; left:0; top:.58em; width:4px; height:.7pt; background:var(--muted)}
+b{color:var(--ink); font-weight:600}
+
+dl{margin:0; display:flex; flex-direction:column; gap:.18rem}
+.row{display:grid; grid-template-columns:6.6rem 1fr; gap:0 .8rem}
+dt{font-family:var(--mono); font-size:7.8pt; letter-spacing:.07em; text-transform:uppercase; color:var(--muted); padding-top:.16em}
+dd{margin:0; color:var(--ink-2)}
+
+.edu{display:flex; align-items:baseline; justify-content:space-between; gap:1rem}
+.edu p{margin:0}
+
+@media print{
+  @page{size:letter; margin:0}
+  body{background:#fff}
+  .page{width:auto; min-height:0; margin:0; padding:0.38in 0.5in; box-shadow:none}
+  :root{--ink:#000; --ink-2:#161616; --muted:#444; --rule:#aaa; --accent:#1c3576; --paper:#fff}
+}
+@media screen and (min-width:8.9in){ .page{margin:1.4rem auto; box-shadow:0 1px 3px rgba(0,0,0,.14)} }
+@media screen and (max-width:8.9in){ .page{width:100%; padding:1.1rem} .meta{text-align:left} }
+
+.printbtn{
+  position:fixed; top:1rem; right:1rem; z-index:10;
+  font-family:var(--mono); font-size:11px; letter-spacing:.06em; text-transform:uppercase;
+  padding:.5rem .8rem; border-radius:3px; cursor:pointer;
+  border:1px solid var(--rule); background:var(--paper); color:var(--ink-2);
+}
+.printbtn:hover{border-color:var(--accent); color:var(--accent)}
+.printbtn:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+@media print{ .printbtn{display:none} }
+@media (max-width:8.9in){ .printbtn{display:none} }
+</style>
+
+<button class="printbtn" type="button" onclick="window.print()">Print / PDF</button>
+
+<div class="page">
+
+  <header class="head">
+    <div>
+      <h1>Moksh Keloo</h1>
+      <p class="tag">Full Stack Developer / AI Agent Engineer</p>
+    </div>
+    <div class="meta">
+      Jacksonville, FL<br>
+      <a href="mailto:mkeloo0705@gmail.com">mkeloo0705@gmail.com</a><br>
+      <a href="https://mokshkeloo.com">mokshkeloo.com</a> &middot;
+      <a href="https://github.com/mkeloo">github.com/mkeloo</a>
+    </div>
+  </header>
+
+  <p class="intro">
+    Full stack engineer who builds AI into client products and stays with them through production.
+    Shipped an LLM agent that keeps 8,500 product labels and safety sheets current at 85% precision,
+    and vision-model check-ins inside a patient engagement app. Works directly with the customer,
+    from requirements through post-launch tuning.
+  </p>
+  <p class="auth">US work authorized &middot; open to remote (US) or relocation</p>
+
+  <h2>Experience</h2>
+
+  <div class="job">
+    <div class="jobhead">
+      <h3>Full Stack Developer <em>&middot; Integrated Web Works</em></h3>
+      <span class="dates">Sep 2024 &ndash; Present</span>
+    </div>
+    <p class="ctx">Agency &mdash; ran client engagements end to end across ~50 codebases.</p>
+
+    <div class="client">
+      <h4>LabelSDS <span>&mdash; label and SDS management</span></h4>
+      <ul>
+        <li>Replaced an estimated <b>$4,000/month of manual review with $100/month of
+          infrastructure</b>. The platform guarantees customers that every product label and safety
+          data sheet stays current. Built the LLM agent that keeps that promise across 8,500
+          products, at <b>85% precision and 350 products/day</b>.</li>
+        <li><b>Tuned the agent against real customer data</b> to reach that precision, then built the
+          review queue their compliance staff now works daily. The agent proposes, a person
+          approves, and rejections feed the next iteration.</li>
+        <li>Designed two-tier retrieval: self-hosted <b>SearXNG</b> and <b>Playwright</b> first,
+          escalating to <b>Serper.dev</b> only when needed. <b>GPT-4o-mini</b> ranks candidates, MD5
+          diffing discards unchanged files, and a daily rate budget caps cost.</li>
+        <li><b>Ran the engagement end to end.</b> Scoped it with the client, wrote the requirements,
+          priced four rounds of scope change, and delivered the rollout.</li>
+      </ul>
+    </div>
+
+    <div class="client">
+      <h4>MedSpark <span>&mdash; patient engagement and medication adherence</span></h4>
+      <ul>
+        <li><b>Built the client's platform end to end</b>: Symfony 7 API and Expo React Native app,
+          requirements through release. Shipped <b>GPT-4.1 vision</b> to validate photo check-ins and
+          <b>gpt-image-1</b> to generate the reward artwork. The check only confirms that a pill is
+          visible, and a manual path covers the rest.</li>
+      </ul>
+    </div>
+
+    <div class="client">
+      <h4>RenewCentral <span>&mdash; multi-state insurance licensing</span></h4>
+      <ul>
+        <li>Built the platform from the ground up on <b>Symfony 8</b>: license tracking across all US
+          states, renewal deadline reminders, document storage, and carrier submission for insurance
+          agents. Added <b>Stripe</b> subscription billing and the staging-to-production deploy
+          pipeline.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="job">
+    <div class="jobhead">
+      <h3>Freelance Full Stack Developer <em>&middot; DateWithNovels</em></h3>
+      <span class="dates">2024 &ndash; 2026</span>
+    </div>
+    <ul>
+      <li>Built and ran a production e-commerce store and its admin application for a direct client.
+        <b>Next.js 16, React 19, Drizzle on PostgreSQL, Stripe Checkout and webhooks</b>, Resend,
+        Cloudinary.</li>
+      <li><b>Worked with the client directly</b>: gathered requirements, set the roadmap, shipped
+        releases, and handled production support.</li>
+    </ul>
+  </div>
+
+  <h2>Projects</h2>
+  <ul>
+    <li><b>PunchStation</b> &mdash; facial-recognition time clock, <b>in production at a gas station,
+      used daily by non-technical staff</b>. The browser computes embeddings, AES-256-GCM encrypts
+      the descriptors, and no photographs are stored. <b>Deployed on site and trained the
+      operators.</b></li>
+    <li><b>MarketMiner</b> &mdash; multi-stage agent pipeline. <b>Claude Haiku 4.5</b> classifies
+      Reddit pain points, <b>Sonnet 4.6</b> clusters them into a market report, and a human approves
+      each stage. Ships <b>its own MCP server</b>, so Claude Code drives the pipeline as a tool.</li>
+  </ul>
+
+  <h2>Skills</h2>
+  <dl>
+    <div class="row"><dt>AI systems</dt><dd>Anthropic Claude API, OpenAI API (GPT-4o, GPT-4.1
+      vision, gpt-image-1), MCP servers, prompt engineering, retrieval pipelines,
+      schema-validated output, human-in-the-loop review, agent evaluation, cost budgeting</dd></div>
+    <div class="row"><dt>Integrations</dt><dd>REST integration and debugging, Stripe webhooks with signature verification, SAML 2.0 SSO, JWT, OAuth, third-party API onboarding</dd></div>
+    <div class="row"><dt>Backend</dt><dd>TypeScript, Node.js, Fastify, Python, FastAPI, PHP,
+      Symfony 6&ndash;8, API Platform, BullMQ, Redis</dd></div>
+    <div class="row"><dt>Frontend</dt><dd>React 19, Next.js 16, TanStack Query, Tailwind CSS,
+      React Native, Expo</dd></div>
+    <div class="row"><dt>Infra</dt><dd>PostgreSQL, Drizzle ORM, Doctrine, Docker, GitHub Actions,
+      DigitalOcean, Vitest</dd></div>
+  </dl>
+
+  <h2>Education</h2>
+  <div class="edu">
+    <p><b>University of Florida</b> &mdash; B.S. Computer Science</p>
+    <span class="dates">2024</span>
+  </div>
+
+</div>
