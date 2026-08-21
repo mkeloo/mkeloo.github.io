@@ -186,10 +186,9 @@ dd{margin:0; color:var(--ink-2)}
   <h2>Projects</h2>
   <ul>
     <li><b>PunchStation</b> &mdash; facial-recognition time clock, <b>in production at a gas station,
-      used daily by non-technical staff</b>. The browser computes embeddings, AES-256-GCM encrypts
-      the descriptors, and no photographs are stored. Every punch clears an <b>IP allowlist, a
-      paired-device token, and a single-use nonce</b>. <b>Deployed on site and trained the
-      operators.</b></li>
+      used daily by non-technical staff</b>. Faces are matched in the browser, and no photographs are
+      stored, only <b>AES-256-GCM</b> encrypted descriptors. A punch only counts from an approved
+      network on a registered tablet. <b>Deployed on site and trained the operators.</b></li>
     <li><b>MarketMiner</b> &mdash; multi-stage agent pipeline. <b>Claude Haiku 4.5</b> classifies
       Reddit pain points, <b>Sonnet 4.6</b> clusters them into a market report, and a human approves
       each stage. Ships <b>its own MCP server</b>, so Claude Code drives the pipeline as a tool.</li>
