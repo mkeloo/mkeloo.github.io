@@ -27,8 +27,8 @@ body{
 .page{
   background:var(--paper);
   width:8.5in; min-height:11in;
-  margin:0 auto; padding:0.32in 0.5in;
-  font-size:9.45pt; line-height:1.35;
+  margin:0 auto; padding:0.30in 0.5in;
+  font-size:9.3pt; line-height:1.35;
 }
 
 .head{display:flex; align-items:flex-end; justify-content:space-between; gap:1.5rem; flex-wrap:wrap}
@@ -62,7 +62,7 @@ h4 span{font-family:var(--sans); font-weight:400; color:var(--muted); letter-spa
 .jobhead h3 em{font-style:normal; font-weight:600; color:var(--accent)}
 .dates{font-family:var(--mono); font-size:8pt; color:var(--muted); white-space:nowrap; font-variant-numeric:tabular-nums}
 
-ul{margin:.26rem 0 0; padding:0; list-style:none; display:flex; flex-direction:column; gap:.16rem}
+ul{margin:.26rem 0 0; padding:0; list-style:none; display:flex; flex-direction:column; gap:.11rem}
 li{position:relative; padding-left:.72rem; color:var(--ink-2)}
 li::before{content:""; position:absolute; left:0; top:.58em; width:4px; height:.7pt; background:var(--muted)}
 b{color:var(--ink); font-weight:600}
@@ -78,7 +78,7 @@ dd{margin:0; color:var(--ink-2)}
 @media print{
   @page{size:letter; margin:0}
   body{background:#fff}
-  .page{width:auto; min-height:0; margin:0; padding:0.32in 0.5in; box-shadow:none}
+  .page{width:auto; min-height:0; margin:0; padding:0.30in 0.5in; box-shadow:none}
   :root{--ink:#000; --ink-2:#161616; --muted:#444; --rule:#aaa; --accent:#1c3576; --paper:#fff}
 }
 @media screen and (min-width:8.9in){ .page{margin:1.4rem auto; box-shadow:0 1px 3px rgba(0,0,0,.14)} }
@@ -166,6 +166,7 @@ dd{margin:0; color:var(--ink-2)}
           states, renewal deadline reminders, document storage, and carrier submission for insurance
           agents. Added <b>Stripe</b> subscription billing and the staging-to-production deploy
           pipeline.</li>
+        <li><b>Encrypted SSN and NPN at rest</b> with AES-256-CBC, a per-value IV and a separate key per field.</li>
       </ul>
     </div>
   </div>
@@ -200,14 +201,14 @@ dd{margin:0; color:var(--ink-2)}
     <div class="row"><dt>AI systems</dt><dd>Anthropic Claude API, OpenAI API (GPT-4o, GPT-4.1
       vision, gpt-image-1), MCP servers, prompt engineering, retrieval pipelines,
       schema-validated output, human-in-the-loop review, agent evaluation, cost budgeting</dd></div>
-    <div class="row"><dt>Integrations</dt><dd>REST integration and debugging, Stripe webhooks with signature verification, SAML 2.0 SSO, JWT, OAuth, third-party API onboarding</dd></div>
+    <div class="row"><dt>Integrations</dt><dd>RESTful API design, integration, and debugging, Stripe webhooks with signature verification, SAML 2.0 SSO, JWT, OAuth, third-party API onboarding</dd></div>
     <div class="row"><dt>Backend</dt><dd>TypeScript, Node.js, Fastify, Python, FastAPI, PHP,
       Symfony 6&ndash;8, API Platform, BullMQ, Redis, object-oriented programming
-      (OOP) and design patterns, Java (coursework)</dd></div>
+      (OOP) and design patterns, Java and C++</dd></div>
     <div class="row"><dt>Frontend</dt><dd>React 19, Next.js 16, TanStack Query, Tailwind CSS,
       React Native, Expo</dd></div>
-    <div class="row"><dt>Infra</dt><dd>PostgreSQL, Drizzle ORM, Doctrine, Docker, GitHub Actions,
-      DigitalOcean, Vitest</dd></div>
+    <div class="row"><dt>Infra</dt><dd>PostgreSQL, Drizzle ORM, Doctrine, Docker, GitHub Actions, AWS,
+      Google Cloud, DigitalOcean, Vitest</dd></div>
   </dl>
 
   <h2>Education</h2>
@@ -217,3 +218,26 @@ dd{margin:0; color:var(--ink-2)}
   </div>
 
 </div>
+
+<script>
+  // Chrome names a "Save as PDF" file after document.title, so swap the title
+  // in for the duration of the print. Covers the Print button and Cmd+P alike.
+  (function () {
+    var pageTitle = document.title;
+
+    function fileName() {
+      var d = new Date();
+      var month = d.toLocaleString('en-US', { month: 'short' });
+      var day = d.getDate();
+      var tens = day % 100;
+      var suffix = (tens >= 11 && tens <= 13) ? 'th'
+        : day % 10 === 1 ? 'st'
+        : day % 10 === 2 ? 'nd'
+        : day % 10 === 3 ? 'rd' : 'th';
+      return 'Moksh_Keloo_Resume_' + month + '_' + day + suffix;
+    }
+
+    window.addEventListener('beforeprint', function () { document.title = fileName(); });
+    window.addEventListener('afterprint', function () { document.title = pageTitle; });
+  })();
+</script>
