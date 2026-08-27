@@ -24,6 +24,7 @@ body{
   margin:0; background:var(--shell); color:var(--ink);
   font-family:var(--sans); -webkit-font-smoothing:antialiased;
   hyphens:none; -webkit-hyphens:none;
+  font-kerning:none; font-variant-ligatures:none;
 }
 .page{
   background:var(--paper);
@@ -41,7 +42,7 @@ h1{font-family:var(--serif); font-weight:500; font-size:25pt; line-height:1; let
 
 .intro{
   margin:.5rem 0 0; padding-top:.42rem; border-top:1.6pt solid var(--ink);
-  color:var(--ink-2); font-size:9.7pt;
+  color:var(--ink-2); font-size:9.3pt;
 }
 
 h2{
@@ -63,10 +64,11 @@ h4 span{font-family:var(--sans); font-weight:400; color:var(--muted); letter-spa
 .jobhead h3 em{font-style:normal; font-weight:600; color:var(--accent)}
 .dates{font-family:var(--mono); font-size:8pt; color:var(--muted); white-space:nowrap; font-variant-numeric:tabular-nums}
 
-ul{margin:.26rem 0 0; padding:0; list-style:none; display:flex; flex-direction:column; gap:.11rem}
-li{position:relative; padding-left:.72rem; color:var(--ink-2)}
+ul{margin:.26rem 0 0; padding:0; list-style:none}
+li + li{margin-top:.11rem}
+li{padding-left:.72rem; text-indent:-.72rem; color:var(--ink-2)}
 .nb{white-space:nowrap}
-li::before{content:""; position:absolute; left:0; top:.58em; width:4px; height:.7pt; background:var(--muted)}
+li::before{content:"\2013"; display:inline-block; width:.72rem; text-indent:0; color:var(--muted)}
 b{color:var(--ink); font-weight:600}
 
 dl{margin:0; display:flex; flex-direction:column; gap:.18rem}
