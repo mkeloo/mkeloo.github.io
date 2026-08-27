@@ -65,6 +65,7 @@ h4 span{font-family:var(--sans); font-weight:400; color:var(--muted); letter-spa
 
 ul{margin:.26rem 0 0; padding:0; list-style:none; display:flex; flex-direction:column; gap:.11rem}
 li{position:relative; padding-left:.72rem; color:var(--ink-2)}
+.nb{white-space:nowrap}
 li::before{content:""; position:absolute; left:0; top:.58em; width:4px; height:.7pt; background:var(--muted)}
 b{color:var(--ink); font-weight:600}
 
@@ -143,7 +144,7 @@ dd{margin:0; color:var(--ink-2)}
           review queue their compliance staff now works daily. The agent proposes, a person
           approves, and rejections feed the next iteration.</li>
         <li>Designed two-tier retrieval: self-hosted <b>SearXNG</b> and <b>Playwright</b> first,
-          escalating to <b>Serper.dev</b> only when needed. <b>GPT-4o-mini</b> ranks candidates, MD5
+          escalating to <b>Serper.dev</b> only when needed. <b class="nb">GPT-4o-mini</b> ranks candidates, MD5
           diffing discards unchanged files, and a daily rate budget caps cost.</li>
         <li><b>Owned the build end to end.</b> Turned the client&rsquo;s requirements into the
           technical spec, reworked it across four rounds of scope change, and delivered the
@@ -166,7 +167,7 @@ dd{margin:0; color:var(--ink-2)}
       <ul>
         <li>Built the platform from the ground up on <b>Symfony 8</b>: license tracking across all US
           states, renewal deadline reminders, document storage, and carrier submission for insurance
-          agents. Added <b>Stripe</b> subscription billing and the staging-to-production deploy
+          agents. Added <b>Stripe</b> subscription billing and the <span class="nb">staging-to-production</span> deploy
           pipeline.</li>
         <li><b>Encrypted SSN and NPN at rest</b> with AES-256-CBC, a per-value IV and a separate key per field.</li>
       </ul>
@@ -205,7 +206,7 @@ dd{margin:0; color:var(--ink-2)}
       schema-validated output, human-in-the-loop review, agent evaluation, cost budgeting</dd></div>
     <div class="row"><dt>Integrations</dt><dd>RESTful API design, integration, and debugging, Stripe webhooks with signature verification, SAML 2.0 SSO, JWT, OAuth, third-party API onboarding</dd></div>
     <div class="row"><dt>Backend</dt><dd>TypeScript, Node.js, Fastify, Python, FastAPI, PHP,
-      Symfony 6&ndash;8, API Platform, BullMQ, Redis, object-oriented programming
+      Symfony 6&ndash;8, API Platform, BullMQ, Redis, <span class="nb">object-oriented</span> programming
       (OOP) and design patterns, Java and C++</dd></div>
     <div class="row"><dt>Frontend</dt><dd>React 19, Next.js 16, TanStack Query, Tailwind CSS,
       React Native, Expo</dd></div>
