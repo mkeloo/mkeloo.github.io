@@ -1,19 +1,12 @@
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Moksh Keloo - full stack developer and AI agent engineer. Resume.">
-<meta name="robots" content="index, follow">
-<meta property="og:title" content="Moksh Keloo - Resume">
-<meta property="og:description" content="Full stack developer and AI agent engineer.">
-<meta property="og:type" content="profile">
 <title>Moksh Keloo Resume</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Newsreader:opsz,wght@6..72,500&display=swap">
 
 <style>
 :root{
   --paper:#ffffff; --shell:#eef0f4;
-  --ink:#151a22; --ink-2:#333c49; --muted:#5a6373;
+  --ink:#000000; --ink-2:#000000; --muted:#4b5461;
   --rule:#ccd3dc; --accent:#2f4a9e;
   --serif:"Newsreader",Georgia,serif;
   --sans:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
@@ -27,10 +20,11 @@ body{
   font-kerning:none; font-variant-ligatures:none;
 }
 .page{
+  text-align:justify; hyphens:none;
   background:var(--paper);
   width:8.5in; min-height:11in;
-  margin:0 auto; padding:0.30in 0.5in;
-  font-size:9.3pt; line-height:1.35;
+  margin:0 auto; padding:0.17in 0.5in;
+  font-size:9.15pt; line-height:1.27;
 }
 
 .head{display:flex; align-items:flex-end; justify-content:space-between; gap:1.5rem; flex-wrap:wrap}
@@ -43,35 +37,32 @@ h1{font-family:var(--serif); font-weight:500; font-size:25pt; line-height:1; let
 .meta a:hover{color:var(--accent)}
 
 .intro{
-  margin:.5rem 0 0; padding-top:.42rem; border-top:1.6pt solid var(--ink);
-  color:var(--ink-2); font-size:9.3pt;
+  margin:.4rem 0 0; padding-top:.34rem; border-top:1.6pt solid var(--ink);
+  color:var(--ink-2); font-size:9.5pt;
 }
 
 h2{
   font-family:var(--mono); font-weight:600; font-size:8pt;
-  letter-spacing:.16em; text-transform:uppercase; color:var(--muted);
-  margin:.5rem 0 .28rem; padding-bottom:.12rem; border-bottom:.7pt solid var(--rule);
+  letter-spacing:0; text-transform:uppercase; color:var(--muted);
+  margin:.32rem 0 .2rem; padding-bottom:.09rem; border-bottom:.7pt solid var(--rule);
 }
 
-.job{margin-bottom:.34rem; break-inside:avoid}
-.ctx{margin:.14rem 0 .06rem; font-size:8.9pt; color:var(--muted)}
-.auth{margin:.18rem 0 0; font-family:var(--mono); font-weight:600; font-size:8.2pt; letter-spacing:.03em; color:var(--accent)}
-.client{margin-top:.26rem; padding-left:.85rem; break-inside:avoid}
-.lbl{font-weight:400; color:var(--muted)}
+.job{margin-bottom:.26rem; break-inside:avoid}
+.ctx{margin:.14rem 0 .06rem; font-size:8.9pt; color:var(--ink)}
+.auth{margin:.14rem 0 0; font-family:var(--mono); font-weight:600; font-size:8.2pt; letter-spacing:.03em; color:var(--accent)}
+.client{margin-top:.2rem; padding-left:.85rem; break-inside:avoid}
 h4{margin:0; font-size:9.1pt; font-weight:600; font-family:var(--mono);
-   letter-spacing:.02em; color:var(--ink)}
-h4 span{font-family:var(--sans); font-weight:400; color:var(--muted); letter-spacing:0}
+   letter-spacing:.02em; color:var(--accent)}
+h4 span{font-family:var(--sans); font-weight:400; font-style:italic; color:var(--ink); letter-spacing:0}
 .job:last-of-type{margin-bottom:0}
 .jobhead{display:flex; align-items:baseline; justify-content:space-between; gap:1rem}
 .jobhead h3{margin:0; font-size:10.4pt; font-weight:600}
 .jobhead h3 em{font-style:normal; font-weight:600; color:var(--accent)}
-.dates{font-family:var(--mono); font-size:8pt; color:var(--muted); white-space:nowrap; font-variant-numeric:tabular-nums}
+.dates{font-family:var(--mono); font-size:8pt; font-weight:700; color:var(--ink); white-space:nowrap; font-variant-numeric:tabular-nums}
 
-ul{margin:.26rem 0 0; padding:0; list-style:none}
-li + li{margin-top:.11rem}
-li{padding-left:.72rem; text-indent:-.72rem; color:var(--ink-2)}
-.nb{white-space:nowrap}
-li::before{content:"\2013"; display:inline-block; width:.72rem; text-indent:0; color:var(--muted)}
+ul{margin:.16rem 0 0; padding:0; list-style:none}
+li{padding-left:.72rem; text-indent:-.72rem; color:var(--ink-2); margin-bottom:.06rem}
+li::before{content:"\2022\a0"; color:var(--ink); font-weight:700; font-size:1.15em; line-height:1}
 b{color:var(--ink); font-weight:600}
 
 dl{margin:0; display:flex; flex-direction:column; gap:.18rem}
@@ -85,12 +76,11 @@ dd{margin:0; color:var(--ink-2)}
 @media print{
   @page{size:letter; margin:0}
   body{background:#fff}
-  .page{width:auto; min-height:0; margin:0; padding:0.30in 0.5in; box-shadow:none}
+  .page{width:auto; min-height:0; margin:0; padding:0.17in 0.5in; box-shadow:none}
   :root{--ink:#000; --ink-2:#161616; --muted:#444; --rule:#aaa; --accent:#1c3576; --paper:#fff}
 }
 @media screen and (min-width:8.9in){ .page{margin:1.4rem auto; box-shadow:0 1px 3px rgba(0,0,0,.14)} }
 @media screen and (max-width:8.9in){ .page{width:100%; padding:1.1rem} .meta{text-align:left} }
-
 .printbtn{
   position:fixed; top:1rem; right:1rem; z-index:10;
   font-family:var(--mono); font-size:11px; letter-spacing:.06em; text-transform:uppercase;
@@ -100,133 +90,144 @@ dd{margin:0; color:var(--ink-2)}
 .printbtn:hover{border-color:var(--accent); color:var(--accent)}
 .printbtn:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
 @media print{ .printbtn{display:none} }
+.print-only{display:none}
+@media print{ .print-only{display:inline} }
 @media (max-width:8.9in){ .printbtn{display:none} }
 </style>
-
-<button class="printbtn" type="button" onclick="window.print()">Print / PDF</button>
-
+</head>
+<body>
 <div class="page">
+  <button class="printbtn" type="button" onclick="window.print()">Print / PDF</button>
 
-  <header class="head">
+  <div class="head">
     <div>
       <h1>Moksh Keloo</h1>
-      <p class="tag">Software Engineer / AI Agents Engineer</p>
+      <p class="tag">Software Engineer</p>
     </div>
     <div class="meta">
       Jacksonville, FL<br>
-      <a href="mailto:mkeloo0705@gmail.com">mkeloo0705@gmail.com</a><span class="printonly"> &middot; (904) 239-7711</span><br>
+      <a href="mailto:mkeloo0705@gmail.com">mkeloo0705@gmail.com</a><span class="print-only"> &middot; (904) 239-7711</span><br>
       <a href="https://mokshkeloo.com">mokshkeloo.com</a> &middot;
       <a href="https://github.com/mkeloo">github.com/mkeloo</a> &middot;
       <a href="https://linkedin.com/in/mokshkeloo">linkedin.com/in/mokshkeloo</a>
     </div>
-  </header>
+  </div>
 
-  <p class="intro">
-    Software engineer who builds AI into client products and stays with them through production.
-    Shipped an LLM agent that keeps 8,500 product labels and safety sheets current at 85% precision,
-    and vision-model check-ins inside a patient engagement app. Works directly with the customer,
-    from requirements through post-launch tuning.
-  </p>
-  <p class="auth">US work authorized &middot; open to remote (US) or relocation</p>
+  <h2>Summary&nbsp;</h2>
+  <p class="intro" style="border-top:0; padding-top:0; margin-top:.1rem">Full stack developer with 2+ years of experience building and shipping web
+    applications, data-intensive APIs, e-commerce platforms, and LLM-powered systems in TypeScript, React, and
+    PHP/Symfony, from client requirements through production. Started on the frontend and now owns products end to
+    end: schema, API, UI, deployment, and post-launch support. Most recent build replaced an estimated $4,000/month
+    of manual compliance review with $100/month of infrastructure.</p>
+  <p class="auth">U.S. citizen, eligible for security clearance &middot; open to relocation</p>
 
-  <h2>Experience</h2>
+  <h2>Experience&nbsp;</h2>
 
   <div class="job">
     <div class="jobhead">
-      <h3>Full Stack Developer <em>&middot; Integrated Webworks</em></h3>
+      <h3>Full Stack Developer <em>&middot; Integrated Webworks</em> <span style="font-weight:400; color:var(--muted)">&mdash; Jacksonville, FL</span></h3>
       <span class="dates">Sep 2024 &ndash; Present</span>
     </div>
-    <p class="ctx">Agency &mdash; technical spec to release across ~50 client codebases.</p>
+    <p class="ctx">Agency. Contributed to 50+ client projects and led three full platform builds from requirements through production.</p>
 
     <div class="client">
-      <h4><span class="lbl">Client:</span> LabelSDS <span>&mdash; label and SDS management</span></h4>
+      <h4>LabelSDS <span>(labelsds.com) &mdash; label and safety data sheet compliance, in production</span></h4>
       <ul>
-        <li>Replaced an estimated <b>$4,000/month of manual review with $100/month of
-          infrastructure</b>. The platform guarantees customers that every product label and safety
-          data sheet stays current. Built the LLM agent that keeps that promise across 8,500
-          products, at <b>85% precision and 350 products/day</b>.</li>
-        <li><b>Tuned the agent against real customer data</b> to reach that precision, then built the
-          review queue their compliance staff now works daily. The agent proposes, a person
-          approves, and rejections feed the next iteration.</li>
-        <li>Designed two-tier retrieval: self-hosted <b>SearXNG</b> and <b>Playwright</b> first,
-          escalating to <b>Serper.dev</b> only when needed. <b class="nb">GPT-4o-mini</b> ranks candidates, MD5
-          diffing discards unchanged files, and a daily rate budget caps cost.</li>
-        <li><b>Owned the build end to end.</b> Turned the client&rsquo;s requirements into the
-          technical spec, reworked it across four rounds of scope change, and delivered the
-          rollout.</li>
+        <li><b>Shipped the review queue</b> (TanStack Start, Fastify) that LabelSDS compliance staff work daily
+          to approve or reject agent proposals. Rejections feed the next tuning pass.</li>
+        <li>On the client&rsquo;s main site (PHP, Symfony, <b>~250k monthly visitors</b>), <b>moved sessions from
+          file-based to database-backed</b> to enforce per-plan device limits after customers shared 1&ndash;2 seat
+          plans across 5&ndash;10 users; excess sessions are evicted and users are prompted to log out other devices.
+          Fixed the SSO regression it caused in production.</li>
+        <li><b>Engineered the LLM agent</b> (TypeScript, BullMQ) that checks <b>8,500 products</b> for updated
+          labels and safety data sheets at <b>85% precision and 350 products/day</b>, replacing
+          <b>~$4,000/month of manual review with $100/month of infrastructure</b>.</li>
+        <li><b>Designed two-tier retrieval</b> (self-hosted SearXNG and Playwright, Serper.dev on a miss) with Redis
+          caching manufacturer site patterns so repeat products skip discovery; GPT-4o-mini ranks candidates, MD5
+          diffing drops unchanged files, a daily budget caps spend.</li>
+        <li><b>Wrote the technical spec</b> from the client&rsquo;s requirements and held it through four rounds of scope change.</li>
       </ul>
     </div>
 
     <div class="client">
-      <h4><span class="lbl">Client:</span> MedSpark <span>&mdash; patient engagement and medication adherence</span></h4>
+      <h4>RenewCentral <span>(insurance.renewcentral.com) &mdash; insurance license management</span></h4>
       <ul>
-        <li><b>Built the client's platform end to end</b>: Symfony 7 API and Expo React Native app,
-          requirements through release. Shipped <b>GPT-4.1 vision</b> to validate photo check-ins and
-          <b>gpt-image-1</b> to generate the reward artwork. The check only confirms that a pill is
-          visible, and a manual path covers the rest.</li>
+        <li><b>Developed the platform from the ground up</b> (Symfony 8, PHP 8.4, API Platform 4, Vite/TypeScript
+          frontend) for insurance agents: license tracking across all <b>50 US states</b>, renewal reminders,
+          document storage, and carrier submission.</li>
+        <li><b>Encrypted SSN and NPN at rest</b> with AES-256-CBC, a per-value IV, and a separate key per field.</li>
+        <li><b>Added Stripe subscription billing</b> with signature-verified webhooks, JWT authentication across the
+          API, and a GitHub Actions deploy pipeline with tagged releases and PR checks.</li>
       </ul>
     </div>
 
     <div class="client">
-      <h4><span class="lbl">Client:</span> RenewCentral <span>&mdash; multi-state insurance licensing</span></h4>
+      <h4>MedSpark <span>(medspark.app) &mdash; patient engagement and medication adherence</span></h4>
       <ul>
-        <li>Built the platform from the ground up on <b>Symfony 8</b>: license tracking across all US
-          states, renewal deadline reminders, document storage, and carrier submission for insurance
-          agents. Added <b>Stripe</b> subscription billing and the <span class="nb">staging-to-production</span> deploy
-          pipeline.</li>
-        <li><b>Encrypted SSN and NPN at rest</b> with AES-256-CBC, a per-value IV and a separate key per field.</li>
+        <li><b>Delivered the Expo React Native app and Symfony 7 API</b> from requirements through deployment for a client
+          with no engineering team. Owned the schema, the API, the mobile client, and the release process.</li>
+        <li><b>Integrated GPT-4.1 vision</b> to validate photo check-ins and <span style="white-space:nowrap">gpt-image-1</span> to generate reward artwork. The
+          vision check confirms a pill is visible, and a manual review path handles the rest, so a wrong model answer
+          never blocks a patient.</li>
+        <li><b>Implemented the notification layer</b> on a message queue (Symfony Messenger): iOS and Android push
+          through Expo, transactional email through Resend, and scheduled reminder jobs. Shipped the app in
+          <b>13 languages</b>.</li>
       </ul>
     </div>
   </div>
 
   <div class="job">
     <div class="jobhead">
-      <h3>Freelance Full Stack Developer <em>&middot; DateWithNovels</em></h3>
-      <span class="dates">2022 &ndash; 2026</span>
+      <h3>Freelance Full Stack Developer <span style="font-weight:400; color:var(--muted)">&mdash; Jacksonville, FL</span></h3>
+      <span class="dates">Apr 2022 &ndash; Present</span>
     </div>
-    <ul>
-      <li>Built and ran a production e-commerce store and its admin application for a direct client.
-        <b>Next.js 16, React 19, Drizzle on PostgreSQL, Stripe Checkout and webhooks</b>, Resend,
-        Cloudinary.</li>
-      <li><b>Worked with the client directly</b>: gathered requirements, set the roadmap, shipped
-        releases, and handled production support.</li>
-    </ul>
+    <p class="ctx">Client work for two local businesses, from requirements through deployment and operator training.</p>
+
+    <div class="client">
+      <div style="display:flex; align-items:baseline; justify-content:space-between; gap:1rem">
+        <h4>PunchStation <span>&mdash; facial-recognition time clock for a gas station, in production</span></h4>
+        <span class="dates">Feb 2026 &ndash; Present</span>
+      </div>
+      <ul>
+        <li><b>Built the time clock</b> used daily by non-technical staff (TypeScript, Fastify, Next.js kiosk and
+          admin, Postgres). Faces are matched in the browser and only <b>AES-256-GCM</b> encrypted descriptors are
+          stored, never photographs. Deployed on site and trained the operators.</li>
+      </ul>
+    </div>
+
+    <div class="client">
+      <div style="display:flex; align-items:baseline; justify-content:space-between; gap:1rem">
+        <h4>DateWithNovels <span>(datewithnovels.com) &mdash; e-commerce store and admin app</span></h4>
+        <span class="dates">Apr 2022 &ndash; Jun 2026</span>
+      </div>
+      <ul>
+        <li><b>Built and ran the storefront and the admin application</b> the client runs the business from: orders,
+          inventory, stock, product and content editing, and role-scoped access, against the same database as the
+          shop.</li>
+        <li><b>Owned checkout, payment, order confirmation email, and the image pipeline</b> end to end, so the
+          client never touches anything technical to run a sale or add a product. Next.js, React, Drizzle on
+          PostgreSQL, Stripe Checkout and webhooks, Resend, Cloudinary.</li>
+      </ul>
+    </div>
   </div>
 
-  <h2>Projects</h2>
-  <ul>
-    <li><b>PunchStation</b> &mdash; facial-recognition time clock, <b>in production at a gas station,
-      used daily by non-technical staff</b>. Faces are matched in the browser, and no photographs are
-      stored, only <b>AES-256-GCM</b> encrypted descriptors. A punch only counts from an approved
-      network on a registered tablet. <b>Deployed on site and trained the operators.</b></li>
-    <li><b>MarketMiner</b> &mdash; multi-stage agent pipeline. <b>Claude Haiku 4.5</b> classifies
-      Reddit pain points, <b>Sonnet 4.6</b> clusters them into a market report, and a human approves
-      each stage. Ships <b>its own MCP server</b>, so Claude Code drives the pipeline as a tool.</li>
-  </ul>
+  <h2>Skills&nbsp;</h2>
+  <p class="intro" style="border-top:0; padding-top:0; margin-top:.1rem"><b>Frontend:</b> React, Next.js, TanStack Start, TanStack Query, React Native, Expo, HTML, CSS,
+    Responsive Web Applications, Web Security, Tailwind CSS, Vite, Webpack, GraphQL | <b>Languages:</b> TypeScript, JavaScript, PHP, Python, Java, C++ |
+    <b>Backend:</b> Node.js, Fastify, Symfony 6&ndash;8, API Platform, Doctrine, PostgreSQL, Drizzle ORM,
+    REST API design, message queues (Symfony Messenger) | <b>AI Integration:</b> OpenAI API (GPT-4o-mini,
+    GPT-4.1 vision, <span style="white-space:nowrap">gpt-image-1</span>), Anthropic Claude API, MCP servers, retrieval pipelines, human-in-the-loop
+    review, cost budgeting | <b>Security:</b> Stripe signature-verified webhooks and
+    subscriptions, AES-256 encryption at rest, JWT auth, SSO, session management | <b>Tooling:</b> Docker,
+    GitHub Actions, AWS, DigitalOcean, Redis, BullMQ, Vitest</p>
 
-  <h2>Skills</h2>
-  <dl>
-    <div class="row"><dt>AI systems</dt><dd>Anthropic Claude API, OpenAI API (GPT-4o, GPT-4.1
-      vision, gpt-image-1), MCP servers, prompt engineering, retrieval pipelines,
-      schema-validated output, human-in-the-loop review, agent evaluation, cost budgeting</dd></div>
-    <div class="row"><dt>Integrations</dt><dd>RESTful API design, integration, and debugging, Stripe webhooks with signature verification, SAML 2.0 SSO, JWT, OAuth, third-party API onboarding</dd></div>
-    <div class="row"><dt>Backend</dt><dd>TypeScript, Node.js, Fastify, Python, FastAPI, PHP,
-      Symfony 6&ndash;8, API Platform, BullMQ, Redis, <span class="nb">object-oriented</span> programming
-      (OOP) and design patterns, Java and C++</dd></div>
-    <div class="row"><dt>Frontend</dt><dd>React 19, Next.js 16, TanStack Query, Tailwind CSS,
-      React Native, Expo</dd></div>
-    <div class="row"><dt>Infra</dt><dd>PostgreSQL, Drizzle ORM, Doctrine, Docker, GitHub Actions, AWS,
-      Google Cloud, DigitalOcean, Vitest</dd></div>
-  </dl>
-
-  <h2>Education</h2>
+  <h2>Education&nbsp;</h2>
   <div class="edu">
     <p><b>University of Florida</b> &mdash; B.S. Computer Science</p>
     <span class="dates">2024</span>
   </div>
 
 </div>
-
 <script>
   // Chrome names a "Save as PDF" file after document.title, so swap the title
   // in for the duration of the print. Covers the Print button and Cmd+P alike.
@@ -249,3 +250,5 @@ dd{margin:0; color:var(--ink-2)}
     window.addEventListener('afterprint', function () { document.title = pageTitle; });
   })();
 </script>
+</body>
+</html>
