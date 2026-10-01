@@ -1,3 +1,8 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Moksh Keloo Resume</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +29,7 @@ body{
   background:var(--paper);
   width:8.5in; min-height:11in;
   margin:0 auto; padding:0.17in 0.5in;
-  font-size:9.15pt; line-height:1.27;
+  font-size:9.15pt; line-height:1.24;
 }
 
 .head{display:flex; align-items:flex-end; justify-content:space-between; gap:1.5rem; flex-wrap:wrap}
@@ -58,7 +63,7 @@ h4 span{font-family:var(--sans); font-weight:400; font-style:italic; color:var(-
 .jobhead{display:flex; align-items:baseline; justify-content:space-between; gap:1rem}
 .jobhead h3{margin:0; font-size:10.4pt; font-weight:600}
 .jobhead h3 em{font-style:normal; font-weight:600; color:var(--accent)}
-.dates{font-family:var(--mono); font-size:8pt; font-weight:700; color:var(--ink); white-space:nowrap; font-variant-numeric:tabular-nums}
+.dates{font-family:var(--mono); font-size:9pt; font-weight:700; color:var(--ink); white-space:nowrap; font-variant-numeric:tabular-nums}
 
 ul{margin:.16rem 0 0; padding:0; list-style:none}
 li{padding-left:.72rem; text-indent:-.72rem; color:var(--ink-2); margin-bottom:.06rem}
@@ -93,6 +98,9 @@ dd{margin:0; color:var(--ink-2)}
 .print-only{display:none}
 @media print{ .print-only{display:inline} }
 @media (max-width:8.9in){ .printbtn{display:none} }
+.jobhead + .jobhead{margin-top:.08rem}
+ul.sub{margin:.08rem 0 0}
+ul.sub li{margin-bottom:.06rem}
 </style>
 </head>
 <body>
@@ -114,27 +122,29 @@ dd{margin:0; color:var(--ink-2)}
   </div>
 
   <h2>Summary&nbsp;</h2>
-  <p class="intro" style="border-top:0; padding-top:0; margin-top:.1rem">Full stack developer with 2+ years of experience building and shipping web
-    applications, data-intensive APIs, e-commerce platforms, and LLM-powered systems in TypeScript, React, and
-    PHP/Symfony, from client requirements through production. Started on the frontend and now owns products end to
-    end: schema, API, UI, deployment, and post-launch support. Most recent build replaced an estimated $4,000/month
-    of manual compliance review with $100/month of infrastructure.</p>
-  <p class="auth">U.S. citizen, eligible for security clearance &middot; open to relocation</p>
+  <p class="intro" style="border-top:0; padding-top:0; margin-top:.1rem">Full stack engineer with two years of experience specializing in production LLM agents. Contributed to 50+ client projects at an
+    agency and led three platform builds end to end, from requirements through post-launch tuning, including a compliance agent
+    that replaced an estimated $4,000/month of manual review with $100/month of infrastructure.</p>
+  <p class="auth">US work authorized &middot; open to remote (US) or relocation</p>
 
   <h2>Experience&nbsp;</h2>
 
   <div class="job">
     <div class="jobhead">
-      <h3>Full Stack Developer <em>&middot; Integrated Webworks</em> <span style="font-weight:400; color:var(--muted)">&mdash; Jacksonville, FL</span></h3>
-      <span class="dates">Sep 2024 &ndash; Present</span>
+      <h3>Independent Contractor, on demand <em>&middot; Integrated Webworks</em></h3>
+      <span class="dates">Sep 2026 &ndash; Present</span>
+    </div>
+    <div class="jobhead">
+      <h3>Full Stack Developer <em>&middot; Integrated Webworks</em></h3>
+      <span class="dates">Sep 2024 &ndash; Aug 2026</span>
     </div>
     <p class="ctx">Agency. Contributed to 50+ client projects and led three full platform builds from requirements through production.</p>
 
     <div class="client">
-      <h4>LabelSDS <span>(labelsds.com) &mdash; label and safety data sheet compliance, in production</span></h4>
+      <h4>LabelSDS <span>&mdash; label and safety data sheet compliance, in production</span></h4>
       <ul>
-        <li><b>Shipped the review queue</b> (TanStack Start, Fastify) that LabelSDS compliance staff work daily
-          to approve or reject agent proposals. Rejections feed the next tuning pass.</li>
+        <li><b>Shipped the review queue</b> (TanStack Start, Fastify) that LabelSDS compliance staff work daily to approve or reject agent
+          proposals. Rejections feed the next tuning pass.</li>
         <li>On the client&rsquo;s main site (PHP, Symfony, <b>~250k monthly visitors</b>), <b>moved sessions from
           file-based to database-backed</b> to enforce per-plan device limits after customers shared 1&ndash;2 seat
           plans across 5&ndash;10 users; excess sessions are evicted and users are prompted to log out other devices.
@@ -150,7 +160,7 @@ dd{margin:0; color:var(--ink-2)}
     </div>
 
     <div class="client">
-      <h4>RenewCentral <span>(insurance.renewcentral.com) &mdash; insurance license management</span></h4>
+      <h4>RenewCentral <span>&mdash; insurance license management</span></h4>
       <ul>
         <li><b>Developed the platform from the ground up</b> (Symfony 8, PHP 8.4, API Platform 4, Vite/TypeScript
           frontend) for insurance agents: license tracking across all <b>50 US states</b>, renewal reminders,
@@ -162,7 +172,7 @@ dd{margin:0; color:var(--ink-2)}
     </div>
 
     <div class="client">
-      <h4>MedSpark <span>(medspark.app) &mdash; patient engagement and medication adherence</span></h4>
+      <h4>MedSpark <span>&mdash; patient engagement and medication adherence</span></h4>
       <ul>
         <li><b>Delivered the Expo React Native app and Symfony 7 API</b> from requirements through deployment for a client
           with no engineering team. Owned the schema, the API, the mobile client, and the release process.</li>
@@ -176,50 +186,39 @@ dd{margin:0; color:var(--ink-2)}
     </div>
   </div>
 
-  <div class="job">
-    <div class="jobhead">
-      <h3>Freelance Full Stack Developer <span style="font-weight:400; color:var(--muted)">&mdash; Jacksonville, FL</span></h3>
-      <span class="dates">Apr 2022 &ndash; Present</span>
-    </div>
-    <p class="ctx">Client work for two local businesses, from requirements through deployment and operator training.</p>
-
-    <div class="client">
-      <div style="display:flex; align-items:baseline; justify-content:space-between; gap:1rem">
-        <h4>PunchStation <span>&mdash; facial-recognition time clock for a gas station, in production</span></h4>
-        <span class="dates">Feb 2026 &ndash; Present</span>
-      </div>
-      <ul>
+  <h2>Projects&nbsp;</h2>
+  <ul>
+    <li><b>DateWithNovels</b> &mdash; e-commerce platform for a family-owned business.
+      <ul class="sub">
+        <li><b>Built and ran the storefront and the admin application</b> the business runs from: orders, inventory,
+          stock, product and content editing, and role-scoped access, against the same database as the shop.</li>
+        <li><b>Owned checkout, payment, order confirmation email, and the image pipeline</b> end to end, so the owners
+          never touch anything technical to run a sale or add a product. Next.js, React, Drizzle on PostgreSQL, Stripe
+          Checkout and webhooks, Resend, Cloudinary.</li>
+      </ul>
+    </li>
+    <li><b>PunchStation</b> &mdash; facial-recognition time clock for a gas station, in production.
+      <ul class="sub">
         <li><b>Built the time clock</b> used daily by non-technical staff (TypeScript, Fastify, Next.js kiosk and
           admin, Postgres). Faces are matched in the browser and only <b>AES-256-GCM</b> encrypted descriptors are
           stored, never photographs. Deployed on site and trained the operators.</li>
       </ul>
-    </div>
-
-    <div class="client">
-      <div style="display:flex; align-items:baseline; justify-content:space-between; gap:1rem">
-        <h4>DateWithNovels <span>(datewithnovels.com) &mdash; e-commerce store and admin app</span></h4>
-        <span class="dates">Apr 2022 &ndash; Jun 2026</span>
-      </div>
-      <ul>
-        <li><b>Built and ran the storefront and the admin application</b> the client runs the business from: orders,
-          inventory, stock, product and content editing, and role-scoped access, against the same database as the
-          shop.</li>
-        <li><b>Owned checkout, payment, order confirmation email, and the image pipeline</b> end to end, so the
-          client never touches anything technical to run a sale or add a product. Next.js, React, Drizzle on
-          PostgreSQL, Stripe Checkout and webhooks, Resend, Cloudinary.</li>
-      </ul>
-    </div>
-  </div>
+    </li>
+    <li><b>MarketMiner</b> &mdash; multi-stage agent pipeline in TypeScript. <b>Claude Haiku 4.5</b> classifies Reddit pain
+      points, <b>Sonnet 4.6</b> clusters them into a market report, and a human approves each stage. Exposes an <b>MCP server</b> so
+      Claude Code can drive the pipeline.</li>
+  </ul>
 
   <h2>Skills&nbsp;</h2>
-  <p class="intro" style="border-top:0; padding-top:0; margin-top:.1rem"><b>Frontend:</b> React, Next.js, TanStack Start, TanStack Query, React Native, Expo, HTML, CSS,
-    Responsive Web Applications, Web Security, Tailwind CSS, Vite, Webpack, GraphQL | <b>Languages:</b> TypeScript, JavaScript, PHP, Python, Java, C++ |
-    <b>Backend:</b> Node.js, Fastify, Symfony 6&ndash;8, API Platform, Doctrine, PostgreSQL, Drizzle ORM,
-    REST API design, message queues (Symfony Messenger) | <b>AI Integration:</b> OpenAI API (GPT-4o-mini,
-    GPT-4.1 vision, <span style="white-space:nowrap">gpt-image-1</span>), Anthropic Claude API, MCP servers, retrieval pipelines, human-in-the-loop
-    review, cost budgeting | <b>Security:</b> Stripe signature-verified webhooks and
-    subscriptions, AES-256 encryption at rest, JWT auth, SSO, session management | <b>Tooling:</b> Docker,
-    GitHub Actions, AWS, DigitalOcean, Redis, BullMQ, Vitest</p>
+  <dl>
+    <div class="row"><dt>Languages</dt><dd>TypeScript, JavaScript, PHP, Python, Java, C++</dd></div>
+    <div class="row"><dt>Backend</dt><dd>Node.js, Fastify, Symfony 6&ndash;8, API Platform, Doctrine, PostgreSQL, Drizzle ORM, REST API design</dd></div>
+    <div class="row"><dt>Frontend</dt><dd>React, Next.js, TanStack Start, TanStack Query, React Native, Expo, Tailwind CSS</dd></div>
+    <div class="row"><dt>AI integration</dt><dd>OpenAI API (GPT-4o-mini, GPT-4.1 vision, gpt-image-1), Anthropic Claude API, MCP servers,
+      retrieval pipelines, human-in-the-loop review, agent evaluation, cost budgeting</dd></div>
+    <div class="row"><dt>Security</dt><dd>Stripe signature-verified webhooks and subscriptions, AES-256 encryption at rest, session management</dd></div>
+    <div class="row"><dt>Tooling</dt><dd>Docker, GitHub Actions, AWS, DigitalOcean, Redis, BullMQ, Vitest</dd></div>
+  </dl>
 
   <h2>Education&nbsp;</h2>
   <div class="edu">
